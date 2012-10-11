@@ -30,26 +30,27 @@
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
         <div class="introduction">
-        	<img src="http://slimndap.com/logo/index.php/logo/png/300/200/0/ef5d3d">
+        	<img src="http://slimndap.com/logo/index.php/logo/png/200/150/0/EF5D3D">
         	<div class="badge">
 	        	<p>
-	        		<h2>Slim &amp; Dapper is Jeroen Schmit, webdesigner- en developer. </h2>
-	        		<p>Gespecialiseerd in lichtgewicht Wordpress of Codeigniter websites voor smartphones, tablets &eacute;n desktops.</p>
+	        		<h2>Jeroen Schmit</h2>
+	        		<h3>webdesigner- & developer</h3>
+	        		<p>Gespecialiseerd in lichtgewicht Wordpress en Codeigniter websites voor smartphones, tablets &eacute;n desktops.</p>
 	        	</p>
 		        <div class="follow">
-					<img src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( "jeroen@slimndap.com" ) ) );?>">
-		        	<a href="http://facebook.com/slimndap" class="icon-facebook">Facebook</a>
-		        	<a href="http://twitter.com/slimndap" class="icon-twitter">Twitter</a>
-		        	<a href="http://www.linkedin.com/company/slim-&-dapper" class="icon-linkedin">LinkedIn</a>
+					<img src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( "jeroen@slimndap.com" ) ) );?>?size=40">
+		        	<a href="http://facebook.com/slimndap" class="icon-facebook"><span>Facebook</span></a>
+		        	<a href="http://twitter.com/slimndap" class="icon-twitter"><span>Twitter</span></a>
+		        	<a href="http://www.linkedin.com/company/slim-&-dapper" class="icon-linkedin"><span>LinkedIn</span></a>
 		        </div>
         	</div>
         </div>
         <div class="contact">
 	        <div class="mail">
-	        	<a href="mailto:jeroen@slimndap.com"><i class="icon-envelope"></i> jeroen@slimndap.com</a>
+	        	<a href="mailto:jeroen@slimndap.com" class="icon-envelope"><span>jeroen@slimndap.com</span></a>
 	        </div>
 	        <div class="phone">
-	        	<a href="tel:+31626216228"><i class="icon-phone"></i> Bel me</a>
+	        	<a href="tel:+31626216228" class="icon-phone"><span>Bel me</span></a>
 	        </div>
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
