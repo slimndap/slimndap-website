@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Slim & Dapper</title>
-        <meta name="description" content="">
+        <meta name="description" content="Jeroen Schmit, webdesigner- & developer.">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
         <meta property="og:title" content="Slim &amp; Dapper"/>
@@ -20,7 +20,7 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/font-awesome-slimndap.css">
         <link rel="stylesheet" href="css/style.css">
 
         <script src="js/vendor/modernizr-2.6.1.min.js"></script>
@@ -30,15 +30,13 @@
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
         <div class="introduction">
-        	<img src="http://slimndap.com/logo/index.php/logo/png/200/150/0/EF5D3D">
+        	<h1>Slim & Dapper</h1>
         	<div class="badge">
-	        	<p>
-	        		<h2>Jeroen Schmit</h2>
-	        		<h3>webdesigner- & developer</h3>
-	        		<p>Gespecialiseerd in lichtgewicht Wordpress en Codeigniter websites voor smartphones, tablets &eacute;n desktops.</p>
-	        	</p>
+        		<h2>Jeroen Schmit</h2>
+        		<h3>webdesigner- & developer</h3>
+        		<p>Gespecialiseerd in lichtgewicht Wordpress en Codeigniter websites voor smartphones, tablets &eacute;n desktops.</p>
 		        <div class="follow">
-					<img src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( "jeroen@slimndap.com" ) ) );?>?size=40">
+					<a class="avatar icon-facebookk"><span>Portret</span></a>
 		        	<a href="http://facebook.com/slimndap" class="icon-facebook"><span>Facebook</span></a>
 		        	<a href="http://twitter.com/slimndap" class="icon-twitter"><span>Twitter</span></a>
 		        	<a href="http://www.linkedin.com/company/slim-&-dapper" class="icon-linkedin"><span>LinkedIn</span></a>
@@ -53,9 +51,6 @@
 	        	<a href="tel:+31626216228" class="icon-phone"><span>Bel me</span></a>
 	        </div>
         </div>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
-
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
