@@ -1,0 +1,99 @@
+html, body {
+	height: 100%
+}
+body {
+	width: 100%;
+	height: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	box-orient: vertical;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.375em;
+}
+
+.introduction {
+	-moz-box-pack: center;
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	box-flex: 1;
+	text-align: center;
+	width: 100%;
+	background-color: #e65015;
+	background-color: #bbe4d3;
+background: rgb(187,228,211); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(187,228,211,1) 0%, rgba(137,165,152,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(187,228,211,1)), color-stop(100%,rgba(137,165,152,1))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(187,228,211,1) 0%,rgba(137,165,152,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(187,228,211,1) 0%,rgba(137,165,152,1) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(187,228,211,1) 0%,rgba(137,165,152,1) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(187,228,211,1) 0%,rgba(137,165,152,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbe4d3', endColorstr='#89a598',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.introduction h2 {
+	font-size: 1em;
+	font-weight: 200;
+	margin: 0;
+}
+
+.introduction p {
+	font-size: 0.875em;
+}
+img {
+}
+
+.badge {
+	width: 300px;
+	margin: auto;
+	font-weight: 200;
+}
+
+.badge img {
+	border-radius: 40px;
+	box-shadow: inset -2px -2px 0px 0 rgba(255,255,255,0.8);
+}
+
+.follow a {
+	color: white;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+.contact {
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	-webkit-box-orient: horizontal;
+	-moz-box-orient: horizontal;
+	box-orient: horizontal;
+	height: 66px;
+	background-color: #413c3c;
+}
+
+.contact a {
+	color: white;
+	font-size: 2em;
+	font-weight: 200;
+	
+}
+.phone,
+.mail {
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	box-flex: 1;	
+	text-align: center;
+width: 160px;
+}
+
+.mail {
+	border-right: 1px dotted gray;
+}
