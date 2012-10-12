@@ -18,6 +18,8 @@
 		<meta property="og:description"
 		      content="Jeroen Schmit, webdesigner- & developer."/>
 
+		<link href='http://fonts.googleapis.com/css?family=Signika+Negative:300,600&text=bcdeghijlmnoprstvwACDEIJLMNOPRS01268@-.%26' rel='stylesheet' type='text/css'>
+
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/font-awesome-slimndap.css">
@@ -31,24 +33,21 @@
         <![endif]-->
         <div class="introduction">
         	<h1>Slim & Dapper</h1>
-        	<div class="badge">
-        		<h2>Jeroen Schmit</h2>
-        		<h3>webdesigner- & developer</h3>
-        		<p>Gespecialiseerd in lichtgewicht Wordpress en Codeigniter websites voor smartphones, tablets &eacute;n desktops.</p>
-		        <div class="follow">
-					<a class="avatar icon-facebookk"><span>Portret</span></a>
-		        	<a href="http://facebook.com/slimndap" class="icon-facebook"><span>Facebook</span></a>
-		        	<a href="http://twitter.com/slimndap" class="icon-twitter"><span>Twitter</span></a>
-		        	<a href="http://www.linkedin.com/company/slim-&-dapper" class="icon-linkedin"><span>LinkedIn</span></a>
-		        </div>
-        	</div>
+    		<h2>Jeroen Schmit</h2>
+    		<h3>webdesigner- & developer</h3>
+	        <div class="follow">
+				<a class="avatar">&nbsp;</a>
+	        	<a href="http://facebook.com/slimndap" class="icon-facebook"><span>Facebook</span></a>
+	        	<a href="http://twitter.com/slimndap" class="icon-twitter"><span>Twitter</span></a>
+	        	<a href="http://www.linkedin.com/company/slim-&-dapper" class="icon-linkedin"><span>LinkedIn</span></a>
+	        </div>
         </div>
         <div class="contact">
 	        <div class="mail">
 	        	<a href="mailto:jeroen@slimndap.com" class="icon-envelope"><span>jeroen@slimndap.com</span></a>
 	        </div>
 	        <div class="phone">
-	        	<a href="tel:+31626216228" class="icon-phone"><span>Bel me</span></a>
+	        	<a href="tel:+31626216228" class="icon-phone"><span>06-26216228</span></a>
 	        </div>
         </div>
         <script src="js/plugins.js"></script>
