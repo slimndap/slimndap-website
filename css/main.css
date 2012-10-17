@@ -1,3 +1,54 @@
+/*! normalize.css v1.0.1 | MIT License | git.io/normalize */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
+audio:not([controls]){display:none;height:0}
+[hidden]{display:none}
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+html,button,input,select,textarea{font-family:sans-serif}
+body{margin:0}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+h2{font-size:1.5em;margin:.83em 0}
+h3{font-size:1.17em;margin:1em 0}
+h4{font-size:1em;margin:1.33em 0}
+h5{font-size:.83em;margin:1.67em 0}
+h6{font-size:.75em;margin:2.33em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+blockquote{margin:1em 40px}
+dfn{font-style:italic}
+mark{background:#ff0;color:#000}
+p,pre{margin:1em 0}
+code,kbd,pre,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}
+pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}
+q{quotes:none}
+q:before,q:after{content:'';content:none}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-0.5em}
+sub{bottom:-0.25em}
+dl,menu,ol,ul{margin:1em 0}
+dd{margin:0 0 0 40px}
+menu,ol,ul{padding:0 0 0 40px}
+nav ul,nav ol{list-style:none;list-style-image:none}
+img{border:0;-ms-interpolation-mode:bicubic}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+form{margin:0}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0;white-space:normal;*margin-left:-7px}
+button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}
+button,input{line-height:normal}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;*overflow:visible}
+button[disabled],input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px}
+input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
@@ -61,31 +112,324 @@ textarea {
    ========================================================================== */
 
 
+  /* Small screen, non-retina */
+	html, body {
+		height: 100%
+	}
+	body {
+		width: 100%;
+		height: 100%;
+		display: -webkit-box;
+		display: -ms-box;
+		display: -moz-box;
+		display: box;
+		-webkit-box-orient: vertical;
+		-ms-box-orient: vertical;
+		-moz-box-orient: vertical;
+		box-orient: vertical;
+		font-family: 'Signika Negative', "Helvetica Neue", Helvetica, sans-serif;
+		font-size: 100%;
+		font-weight: 300;
+		line-height: 1.375em;
+	}
+	
+	.introduction {
+		-webkit-box-flex: 1;
+		-ms-box-flex: 1;
+		-moz-box-flex: 1;
+		box-flex: 1;
+		min-height: 300px;
+		text-align: center;
+		width: 100%;
+		background: rgb(187,228,211); /* Old browsers */
+		background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%), url(../img/concrete_wall.jpg) repeat; /* FF3.6+ */
+		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(187,228,211,1)), color-stop(100%,rgba(137,165,152,1))); /* Chrome,Safari4+ */
+		background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 100%), url(../img/concrete_wall.jpg) repeat; /* Chrome10+,Safari5.1+ */
+		background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 100%), url(../img/concrete_wall.jpg) repeat; /* Opera 12+ */
+		background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 100%), url(../img/concrete_wall.jpg) repeat; /* IE10+ */
+		background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 100%)), url(../img/concrete_wall.jpg) repeat; ; /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbe4d3', endColorstr='#89a598',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		background-size: auto, 260px 260px;
+	
+		display: -webkit-box;
+		display: -ms-box;
+		display: -moz-box;
+		display: box;
+		-webkit-box-orient: vertical;
+		-ms-box-orient: vertical;
+		-moz-box-orient: vertical;
+		box-orient: vertical;
+	
+		-webkit-box-pack: center;
+		-ms-box-pack: center;
+		-moz-box-pack: center;
+		box-pack: center;
+	}
 
+	.no-flexboxlegacy .introduction{
+		height: 100%;
+	}
+	
+	.no-flexboxlegacy .floater {
+		margin: auto auto;
+		position: absolute;
+		top:0; bottom:0; left:0; right:0;
+		height: 258px;
+	}
+	
+	.introduction h1 {
+		background-image: url(http://slimndap.com/logo/index.php/logo/png/200/150/0/EF5D3D);
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: 200px 150px;
+		height: 150px;
+		margin: 0;
+		text-indent: 100%;
+		overflow: hidden;
+		white-space: nowrap;
+		
+	
+	}
+	
+	.introduction h2 {
+		font-size: 1em;
+		font-weight: 300;
+		margin: 0;
+	}
+	
+	.introduction h3 {
+		font-size: 1em;
+		font-weight: 600;
+		margin: 0;
+	}
+	
+	.introduction p {
+		font-size: 0.875em;
+		display: none;
+	}
+	img {
+	}
+	
+	.follow {
+		margin-top: 1em;
+	}
+	
+	.follow a {
+		color: white;
+		display: inline-block;
+		background-color: #4e6259;
+		background-color: rgba(0,0,0,0.5);
+		border-radius: 50% 50% 50% 50%;
+		width: 48px;
+		height: 48px;
+		line-height: 48px;
+		text-decoration: none;
+		font-size: 1.5em;
+		color: #89a598;
+		white-space: nowrap;
+	}
+	
+	.follow a:hover {
+		color: white;
+		
+	}
+	
+	.follow a span {
+		display: none;
+	}
+	
+	.follow .avatar {
+		background-image: url(http://www.gravatar.com/avatar/fddd411ae4a428d23ad4070ebff12a4d?size=48);
+		background-size: 48px 48px;
+		display: inline-block;
+	}
+	
+	.contact {
+		display: -webkit-box;
+		display: -ms-box;
+		display: -moz-box;
+		display: box;
+		-webkit-box-orient: horizontal;
+		-ms-box-orient: horizontal;
+		-moz-box-orient: horizontal;
+		box-orient: horizontal;
+		height: 66px;
+		background-color: #413c3c;
+		line-height: 66px;
+		overflow: hidden;
+		background: rgb(65,60,60); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(65,60,60,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(65,60,60,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(65,60,60,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(65,60,60,1) 0%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(65,60,60,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(65,60,60,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#413c3c', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+	}
+	
+	.no-flexboxlegacy .contact {
+		position: absolute;
+		bottom: 0;
+		width: 100%;		
+	}
+	.no-flexboxlegacy .mail,
+	.no-flexboxlegacy .phone {
+		position: absolute;
+		width: 50%;
+	}
+	.no-flexboxlegacy .phone {
+		left: 50%;
+	}	
 
+	.contact {
+		font-size: 2em;
+		font-weight: 200;
+		color: gray;
+		
+	}
+	.contact a {
+		text-decoration: none;
+		color: gray;
+	}
+	
+	.contact a:hover {
+		color: white;
+	}
+	
+	.contact span {
+		text-transform: uppercase;
+		font-size: 0.875em;
+		font-weight: 200;
+		margin-left: 0.5em;
+	}
+	
+	.contact>div {
+		-webkit-box-flex: 1;
+		-ms-box-flex: 1;
+		-moz-box-flex: 1;
+		box-flex: 1;	
+		text-align: center;
+		border-left: 1px dotted gray;
 
+	}
+	
+	.contact>div:first-child  {
+		border: none;
+	}
+	
+	.phone .view {
+		display: none;
+	}
+	
+	.no-touch .phone .view {
+		display: inline;
+	}	
+	.no-touch .phone .dial {
+		display: none;
+	}
+	.no-touch .phone span {
+		display: inherit;
+	}
+		
+	.mail {
+		border-right: 1px dotted gray;
+	}
+	
+@media only screen and (min-width: 320px) {
+	.contact a span {
+		display: none;
+	}
+	.mail a span {
+		display: none;
+	}
+}
 
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
+@media only screen and (orientation: landscape) and (max-width: 480px) {
+  	.introduction {
+	  	min-height: 254px;
+  	}
+	.introduction h1 {
+		background-image: url(http://slimndap.com/logo/index.php/logo/png/300/100/0/EF5D3D);
+		background-size: 300px 100px;
+		height: 100px;
+	}
 
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-       only screen and (min-resolution: 144dpi) {
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+only screen and ( min--moz-device-pixel-ratio: 2) and (min-width: 320px),
+only screen and ( -o-min-device-pixel-ratio: 2/1) and (min-width: 320px),
+only screen and ( min-device-pixel-ratio: 2) and (min-width: 320px),
+only screen and ( min-resolution: 192dpi) and (min-width: 320px),
+only screen and ( min-resolution: 2dppx) and (min-width: 320px) {
+
+  	/* Small screen, retina, stuff to override above media query */
+	.introduction h1 {
+		background-image: url(http://slimndap.com/logo/index.php/logo/png/400/300/0/EF5D3D);
+	}
+	.follow .avatar {
+		background-image: url(http://www.gravatar.com/avatar/fddd411ae4a428d23ad4070ebff12a4d?size=96);
+	}
 
 }
+
+@media
+only screen and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) and (max-width: 480px),
+only screen and (orientation: landscape) and ( min--moz-device-pixel-ratio: 2) and (max-width: 480px),
+only screen and (orientation: landscape) and ( -o-min-device-pixel-ratio: 2/1) and (max-width: 480px),
+only screen and (orientation: landscape) and ( min-device-pixel-ratio: 2) and (max-width: 480px),
+only screen and (orientation: landscape) and ( min-resolution: 192dpi) and (max-width: 480px),
+only screen and (orientation: landscape) and ( min-resolution: 2dppx) and (max-width: 480px) {
+	.introduction h1 {
+		background-image: url(http://slimndap.com/logo/index.php/logo/png/600/200/0/EF5D3D);
+	}
+}
+
+@media only screen and (min-width: 700px) {
+
+  /* Medium screen, non-retina */
+	.contact a span {
+		display: inherit;
+	}
+	.vcard a span {
+		display: none;
+	}
+	
+
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 700px),
+only screen and ( min--moz-device-pixel-ratio: 2) and (min-width: 700px),
+only screen and ( -o-min-device-pixel-ratio: 2/1) and (min-width: 700px),
+only screen and ( min-device-pixel-ratio: 2) and (min-width: 700px),
+only screen and ( min-resolution: 192dpi) and (min-width: 700px),
+only screen and ( min-resolution: 2dppx) and (min-width: 700px) {
+
+  /* Medium screen, retina, stuff to override above media query */
+
+}
+
+@media only screen and (min-width: 1300px) {
+
+  /* Large screen, non-retina */
+
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1300px),
+only screen and ( min--moz-device-pixel-ratio: 2) and (min-width: 1300px),
+only screen and ( -o-min-device-pixel-ratio: 2/1) and (min-width: 1300px),
+only screen and ( min-device-pixel-ratio: 2) and (min-width: 1300px),
+only screen and ( min-resolution: 192dpi) and (min-width: 1300px),
+only screen and ( min-resolution: 2dppx) and (min-width: 1300px) {
+
+  /* Large screen, retina, stuff to override above media query */
+
+}
+
+
 
 /* ==========================================================================
    Helper classes
@@ -219,3 +563,87 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+/*  Font Awesome
+    the iconic font designed for use with Twitter Bootstrap
+    -------------------------------------------------------
+    The full suite of pictographic icons, examples, and documentation
+    can be found at: http://fortawesome.github.com/Font-Awesome/
+
+    License
+    -------------------------------------------------------
+    The Font Awesome webfont, CSS, and LESS files are licensed under CC BY 3.0:
+    http://creativecommons.org/licenses/by/3.0/ A mention of
+    'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable
+    source code is considered acceptable attribution (most common on the web).
+    If human readable source code is not available to the end user, a mention in
+    an 'About' or 'Credits' screen is considered acceptable (most common in desktop
+    or mobile software).
+
+    Contact
+    -------------------------------------------------------
+    Email: dave@davegandy.com
+    Twitter: http://twitter.com/fortaweso_me
+    Work: http://lemonwi.se co-founder
+
+    */
+@font-face {
+  font-family: "FontAwesome";
+  src: url('../font/fontawesome-webfont-slimndap.eot');
+  src: url('../font/fontawesome-webfont-slimndap.eot?#iefix') format('eot'), url('../font/fontawesome-webfont-slimndap.woff') format('woff'), url('../font/fontawesome-webfont-slimndap.ttf') format('truetype'), url('../font/fontawesome-webfont-slimndap.svg#FontAwesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*  Font Awesome styles
+    ------------------------------------------------------- */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+a [class^="icon-"], a [class*=" icon-"] {
+  display: inline-block;
+  text-decoration: inherit;
+}
+/* makes the font 33% larger relative to the icon container */
+.icon-large:before {
+  vertical-align: top;
+  font-size: 1.3333333333333333em;
+}
+.btn [class^="icon-"], .btn [class*=" icon-"] {
+  /* keeps button heights with and without icons the same */
+
+  line-height: .9em;
+}
+li [class^="icon-"], li [class*=" icon-"] {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+}
+li .icon-large[class^="icon-"], li .icon-large[class*=" icon-"] {
+  /* 1.5 increased font size for icon-large * 1.25 width */
+
+  width: 1.875em;
+}
+li[class^="icon-"], li[class*=" icon-"] {
+  margin-left: 0;
+  list-style-type: none;
+}
+li[class^="icon-"]:before, li[class*=" icon-"]:before {
+  text-indent: -2em;
+  text-align: center;
+}
+li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
+  text-indent: -1.3333333333333333em;
+}
+/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+    readers do not read off random characters that represent icons */
+.icon-twitter:before              { content: "\f099"; }
+.icon-facebook:before             { content: "\f09a"; }
+.icon-linkedin:before             { content: "\f0e1"; }
+.icon-envelope:before             { content: "\f003"; }
+.icon-phone:before                { content: "\f095"; }
+.icon-download-alt:before         { content: "\f019"; }
