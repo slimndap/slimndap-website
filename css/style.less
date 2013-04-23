@@ -1,5 +1,3 @@
-@media only screen and (min-width: 320px) {
-
   /* Small screen, non-retina */
 	html, body {
 		height: 100%
@@ -8,45 +6,61 @@
 		width: 100%;
 		height: 100%;
 		display: -webkit-box;
+		display: -ms-box;
 		display: -moz-box;
 		display: box;
 		-webkit-box-orient: vertical;
+		-ms-box-orient: vertical;
 		-moz-box-orient: vertical;
 		box-orient: vertical;
 		font-family: 'Signika Negative', "Helvetica Neue", Helvetica, sans-serif;
 		font-size: 100%;
 		font-weight: 300;
 		line-height: 1.375em;
+		background: rgb(187,228,211); /* Old browsers */
+		background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%), url(../img/concrete_wall.jpg) repeat; /* FF3.6+ */
+		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(187,228,211,1)), color-stop(100%,rgba(137,165,152,1))); /* Chrome,Safari4+ */
+		background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 100%), url(../img/concrete_wall.jpg) repeat; /* Chrome10+,Safari5.1+ */
+		background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 100%), url(../img/concrete_wall.jpg) repeat; /* Opera 12+ */
+		background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 100%), url(../img/concrete_wall.jpg) repeat; /* IE10+ */
+		background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 100%), url(../img/concrete_wall.jpg) repeat; /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbe4d3', endColorstr='#89a598',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		background-size: auto, 260px 260px;
 	}
 	
 	.introduction {
 		-webkit-box-flex: 1;
+		-ms-box-flex: 1;
 		-moz-box-flex: 1;
 		box-flex: 1;
 		min-height: 300px;
 		text-align: center;
 		width: 100%;
-		background-color: #e65015;
-		background-color: #bbe4d3;
-		background: rgb(187,228,211); /* Old browsers */
-		background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%), url(../img/concrete_wall.jpg) repeat; /* FF3.6+ */
-		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(187,228,211,1)), color-stop(100%,rgba(137,165,152,1))); /* Chrome,Safari4+ */
-		background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 100%), url(../img/concrete_wall.jpg) repeat; /* Chrome10+,Safari5.1+ */
-		background: -o-radial-gradient(center, ellipse cover,  rgba(187,228,211,1) 0%,rgba(137,165,152,1) 100%); /* Opera 12+ */
-		background: -ms-radial-gradient(center, ellipse cover,  rgba(187,228,211,1) 0%,rgba(137,165,152,1) 100%); /* IE10+ */
-		background: radial-gradient(ellipse at center,  rgba(187,228,211,1) 0%,rgba(137,165,152,1) 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbe4d3', endColorstr='#89a598',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	
 		display: -webkit-box;
+		display: -ms-box;
 		display: -moz-box;
 		display: box;
 		-webkit-box-orient: vertical;
+		-ms-box-orient: vertical;
 		-moz-box-orient: vertical;
 		box-orient: vertical;
 	
 		-webkit-box-pack: center;
+		-ms-box-pack: center;
 		-moz-box-pack: center;
 		box-pack: center;
+	}
+
+	.no-flexboxlegacy .introduction{
+		height: 100%;
+	}
+	
+	.no-flexboxlegacy .floater {
+		margin: auto auto;
+		position: absolute;
+		top:0; bottom:0; left:0; right:0;
+		height: 258px;
 	}
 	
 	.introduction h1 {
@@ -89,6 +103,7 @@
 	.follow a {
 		color: white;
 		display: inline-block;
+		background-color: #4e6259;
 		background-color: rgba(0,0,0,0.5);
 		border-radius: 50% 50% 50% 50%;
 		width: 48px;
@@ -97,7 +112,8 @@
 		text-decoration: none;
 		font-size: 1.5em;
 		color: #89a598;
-white-space: nowrap;	}
+		white-space: nowrap;
+	}
 	
 	.follow a:hover {
 		color: white;
@@ -116,61 +132,93 @@ white-space: nowrap;	}
 	
 	.contact {
 		display: -webkit-box;
+		display: -ms-box;
 		display: -moz-box;
 		display: box;
 		-webkit-box-orient: horizontal;
+		-ms-box-orient: horizontal;
 		-moz-box-orient: horizontal;
 		box-orient: horizontal;
 		height: 66px;
-		background-color: #413c3c;
 		line-height: 66px;
 		overflow: hidden;
-		background: rgb(65,60,60); /* Old browsers */
-		background: -moz-linear-gradient(top,  rgba(65,60,60,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(65,60,60,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top,  rgba(65,60,60,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top,  rgba(65,60,60,1) 0%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top,  rgba(65,60,60,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
-		background: linear-gradient(to bottom,  rgba(65,60,60,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#413c3c', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
-
+		background-color: rgba(0,0,0,0.5);
+		border-top: 2px solid rgba(0,0,0,0.5);
 	}
 	
-	.contact a {
-		font-size: 2em;
+	.no-flexboxlegacy .contact {
+		position: absolute;
+		bottom: 0;
+		width: 100%;		
+	}
+	.no-flexboxlegacy .mail,
+	.no-flexboxlegacy .phone {
+		position: absolute;
+		width: 50%;
+	}
+	.no-flexboxlegacy .phone {
+		left: 50%;
+	}	
+
+	.contact {
+		font-size: 1.3em;
 		font-weight: 200;
+		color: #ccc;
+	}
+	.contact a {
 		text-decoration: none;
-		color: gray;
+		color: inherit;
 	}
 	
 	.contact a:hover {
 		color: white;
 	}
 	
-	.contact a span {
-		display: none;
+	.contact span {
 		text-transform: uppercase;
 		font-size: 0.875em;
 		font-weight: 200;
 		margin-left: 0.5em;
 	}
-	.phone,
-	.mail {
+	
+	.contact>div {
 		-webkit-box-flex: 1;
+		-ms-box-flex: 1;
 		-moz-box-flex: 1;
 		box-flex: 1;	
 		text-align: center;
+		border-left: 1px solid rgba(0,0,0,0.2);
+
 	}
 	
-	.no-touch .phone a span {
+	.contact>div:first-child  {
+		border: none;
+	}
+	
+	.phone .view {
+		display: none;
+	}
+	
+	.no-touch .phone .view {
+		display: inline;
+	}	
+	.no-touch .phone .dial {
+		display: none;
+	}
+	.no-touch .phone span {
 		display: inherit;
 	}
-	
+		
 	.mail {
 		border-right: 1px dotted gray;
 	}
 	
-	.phone a {
+@media only screen and (min-width: 320px) {
+	.contact a span {
+		display: none;
+	}
+	.mail a span {
+		display: none;
 	}
 }
 
@@ -222,6 +270,10 @@ only screen and (orientation: landscape) and ( min-resolution: 2dppx) and (max-w
 	.contact a span {
 		display: inherit;
 	}
+	.vcard a span {
+		display: none;
+	}
+	
 
 }
 

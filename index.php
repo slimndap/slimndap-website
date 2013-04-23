@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Slim & Dapper</title>
-        <meta name="description" content="Jeroen Schmit, webdesigner- & developer.">
+        <meta name="description" content="Jeroen Schmit, freelance webdesigner- &amp; developer. Websites voor mobile, tablets en desktops. Contact: jeroen@slimndap.com / 06-26216228. ">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
         <meta property="og:title" content="Slim &amp; Dapper"/>
@@ -59,6 +59,9 @@
 	        -->
 	        <div class="mail">
 	        	<a href="mailto:jeroen@slimndap.com" onClick="recordOutboundLink(this, 'Externe link', 'mail');return false;"><i class="icon-envelope"></i> <span>jeroen@slimndap.com</span></a>
+	        </div>
+	        <div class="address">
+	        	<a href="http://maps.google.com/?f=d&hl=nl&q=Slim+%26+Dapper,+Den+Haag" onClick="recordOutboundLink(this, 'Externe link', 'maps');return false;"><i class="icon-map-marker"></i> <span>Papestraat 27, Den Haag</span></a>
 	        </div>
 	        <div class="phone">
 	        	<div class="dial"><a href="tel:+31626216228" onClick="recordOutboundLink(this, 'Externe link', 'phone');return false;"><i class="icon-phone"></i> <span>06-26216228</span></a></div>
