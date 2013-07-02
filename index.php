@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Slim & Dapper</title>
-        <meta name="description" content="Jeroen Schmit, freelance webdesigner- &amp; developer. Websites voor mobile, tablets en desktops. Contact: jeroen@slimndap.com / 06-26216228. ">
+        <meta name="description" content="Jeroen Schmit, web guy in Den Haag. Gespecialiseerd in frontend (HTML5/CSS/Javascript), Wordpress en Codeigniter. Contact: jeroen@slimndap.com / 06-26216228. ">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
         <meta property="og:title" content="Slim &amp; Dapper"/>
