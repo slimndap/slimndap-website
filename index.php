@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Slim & Dapper</title>
-        <meta name="description" content="Jeroen Schmit, web guy in Den Haag. Gespecialiseerd in frontend (HTML5/CSS/Javascript), Wordpress en Codeigniter. Contact: jeroen@slimndap.com / 06-26216228. ">
+        <meta name="description" content="Jeroen Schmit, freelance webdesigner- & developer in Den Haag. Gespecialiseerd in frontend (HTML5/CSS/Javascript), Wordpress en Codeigniter. Contact: jeroen@slimndap.com / 06-26216228. ">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
         <meta property="og:title" content="Slim &amp; Dapper"/>
@@ -21,7 +21,7 @@
 		<link rel="publisher" href="https://plus.google.com/115893737395232267748" />
 		
 
-		<link href='http://fonts.googleapis.com/css?family=Signika+Negative:300,600&text=bcdeghijlmnoprstvwACDEIJLMNOPRS01268@-.%26' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Signika+Negative:300,600' rel='stylesheet' type='text/css'>
 		
 		<meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
