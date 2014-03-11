@@ -35,28 +35,20 @@
         <script src="js/vendor/modernizr.custom.69989.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-        <![endif]-->
         <div class="introduction">
         	<div class="floater">
-        	<h1>Slim & Dapper</h1>
-    		<h2>Jeroen Schmit</h2>
-    		<h3>webdesigner- & developer</h3>
-	        <div class="follow">
-				<a class="avatar">&nbsp;</a>
-	        	<a href="http://facebook.com/slimndap" class="icon-facebook" onClick="recordOutboundLink(this, 'Externe link', 'facebook');return false;"><span>Facebook</span></a>
-	        	<a href="http://twitter.com/slimndap" class="icon-twitter" onClick="recordOutboundLink(this, 'Externe link', 'twitter');return false;"><span>Twitter</span></a>
-	        	<a href="http://www.linkedin.com/in/jeroenschmit" class="icon-linkedin" onClick="recordOutboundLink(this, 'Externe link', 'linkedin');return false;"><span>LinkedIn</span></a>
-	        </div>
+	        	<h1>Slim & Dapper</h1>
+	    		<h2>Jeroen Schmit</h2>
+	    		<h3>web guy</h3>
+		        <div class="follow">
+					<a class="avatar">&nbsp;</a>
+		        	<a href="http://facebook.com/slimndap" class="icon-facebook" onClick="recordOutboundLink(this, 'Externe link', 'facebook');return false;"><span>Facebook</span></a>
+		        	<a href="http://twitter.com/slimndap" class="icon-twitter" onClick="recordOutboundLink(this, 'Externe link', 'twitter');return false;"><span>Twitter</span></a>
+		        	<a href="http://www.linkedin.com/in/jeroenschmit" class="icon-linkedin" onClick="recordOutboundLink(this, 'Externe link', 'linkedin');return false;"><span>LinkedIn</span></a>
+		        </div>
         	</div>
         </div>
         <div class="contact">
-        	<!--
-	        <div class="vcard">
-	        	<a href="jeroen_schmit.vcf" onClick="recordOutboundLink(this, 'Externe link', 'vcard');return false;"><i  class="icon-download-alt"></i> <span>download</span></a>
-	        </div>
-	        -->
 	        <div class="mail">
 	        	<a href="mailto:jeroen@slimndap.com" onClick="recordOutboundLink(this, 'Externe link', 'mail');return false;"><i class="icon-envelope"></i> <span>jeroen@slimndap.com</span></a>
 	        </div>
