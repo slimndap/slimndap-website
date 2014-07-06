@@ -22,6 +22,14 @@ html body.archive header .logo a {
   height: 5em;
   width: 16em;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  html body.single header .logo a,
+  html body.page header .logo a,
+  html body.archive header .logo a {
+    background-image: url(http://slimndap.com/logo/index.php/logo/png/484/160/0/fc3b00/slimndap.png);
+    background-size: 242px 80px;
+  }
+}
 html body.single .posts .post h1,
 html body.page .posts .post h1 {
   font-size: 3em;
@@ -94,6 +102,12 @@ html body.home header {
   height: 100%;
   background-image: url(http://slimndap.com/logo/index.php/logo/png/240/240/0/fc3b00/slimndap.png);
   background-position: center center;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  html body.home header {
+    background-image: url(http://slimndap.com/logo/index.php/logo/png/480/480/0/fc3b00/slimndap.png);
+    background-size: 240px 240px;
+  }
 }
 html body.home header .posts {
   position: absolute;
@@ -301,7 +315,7 @@ html body footer .social {
 html body footer .about a,
 html body footer .contact a,
 html body footer .social a {
-  color: inherit;
+  color: #fff;
   text-decoration: none;
 }
 html body footer .about a:hover,
