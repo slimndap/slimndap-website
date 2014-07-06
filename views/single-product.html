@@ -1,0 +1,32 @@
+{% extends "views/base.html" %}
+{% block meta %}
+<title>{{post.title}} - {{wp_title}}</title>
+{% endblock meta %}
+{% block posts %}
+<article class='post woocommerce'>
+  <h1>{{product.get_title}}</h1>
+  <div class='intro'>
+    {{post.post_excerpt}}
+  </div>
+  <div class='download'>
+    <h2>Download</h2>
+    <p>{{product.get_title}} costs {{ product.get_price_html }}.</p>
+    <a class='button alt' href='{{product.add_to_cart_url}}'>Continue</a>
+  </div>
+  <div class='order'></div>
+  <div class='featured'>
+    {% for feature in featured %}
+    <figure>
+      <img src='{{feature.src|resize(320*1.5)}}'>
+      <figcaption>
+        <h3>{{feature.post_title}}</h3>
+        {{feature.post_content|apply_filters('the_content')}}
+      </figcaption>
+    </figure>
+    {% endfor %}
+  </div>
+  <div class='content'>
+    {{post.content}}
+  </div>
+</article>
+{% endblock posts %}

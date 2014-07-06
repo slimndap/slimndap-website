@@ -1,0 +1,73 @@
+!!! 5
+/[if (lt IE 7)]
+	%html.no-js.lt-ie9.lt-ie8.lt-ie7(lang="en")>/
+/[if IE7] 
+	%html.no-js.lt-ie9.lt-ie8(lang="en")>/
+/[if IE8] 
+	%html.no-js.lt-ie9(lang="en")>/
+<!--[if (gt IE 8)]><!--><html lang="en" class="no-js"><!--<![endif]-->
+%head
+	%meta(charset="{{ bloginfo('charset') }}")
+	
+	{% block meta %}
+	%title {{wp_title}}
+	%meta(name="description" content="{{ bloginfo('description') }}")
+
+	%meta(property="og:title" content="{{ bloginfo('name') }}")
+	%meta(property="og:description" content="{{ bloginfo('description') }}")
+	%meta(property="og:type" content="website")
+	%meta(property="og:url" content="{{ bloginfo('wpurl') }}")
+	%meta(property="og:image" content="{{ template_uri }}/img/facebook.png")
+	{% endblock meta %}
+
+	%meta{"http-equiv"=>"Content-Type", :content=>"text/html; charset=UTF-8"}
+	%meta{"http-equiv"=>"X-UA-Compatible", :content=>"IE=edge,chrome=1"}
+
+	%meta(name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+	%meta(name="apple-mobile-web-app-title" content="Slimndap")
+
+	%link{:rel=>"stylesheet", :href=>"{{ stylesheet_uri }}", :type=>"text/css", :media=>"screen"}
+	%link{:rel=>"pingback", :href=>"{{ bloginfo('pingback_url') }}"}
+		
+	/[if lt IE 9]
+		%script{:src=>"http://html5shim.googlecode.com/svn/trunk/html5.js"}
+
+	{{wp_head}}
+
+%body(class="{{body_class}}")
+	%header#header
+		{% block header %}
+		.logo 
+			%a(href="{{bloginfo('url')}}") Slim &amp; Dapper
+		%nav.menu 
+			%a(href="#footer") menu
+		{% endblock header %}
+	{% block breadcrumbs %}
+	.breadcrumbs {{ breadcrumbs }}
+	{% endblock breadcrumbs %}
+	{% block intro %}
+	{% endblock intro %}
+	.posts#posts		
+		{% block posts %}
+		{% endblock posts %}
+	%footer#footer
+		.about
+			%figure 
+				%img(src="http://www.gravatar.com/avatar/fddd411ae4a428d23ad4070ebff12a4d.png")
+			%p 
+				Ik ben Jeroen Schmit en ik maak websites en plugins in WordPress.
+				%br
+				Je kan mij <a href="mailto:jeroen@slimndap.com">inhuren</a>. Graag zelfs!
+		%nav.contact
+			.mail
+				%a(href="mailto:jeroen@slimndap.com") jeroen@slimndap.com
+			.visit
+				%a(href="https://www.google.com/maps/preview/dir//Slim+%26+Dapper,+Papestraat+27,+2513+AV+Den+Haag,+Netherlands/@52.0789276,4.3076708,17z/data=!4m13!1m4!3m3!1s0x47c5b725629ece71:0xdf4bfd75204f5a97!2sSlim+%26+Dapper!3b1!4m7!1m0!1m5!1m1!1s0x47c5b725629ece71:0xdf4bfd75204f5a97!2m2!1d4.307684!2d52.078918") Papestraat 27, Den Haag, NL
+			.call
+				%a(href="tel:+31626216228") 06-26216228
+		.social
+			%a.facebook(href="http://facebook.com/slimndap") Facebook
+			%a.twitter(href="http://twitter.com/jhu") Twitter
+			%a.linkedin(href="http://www.linkedin.com/in/jeroenschmit") LinkedIn
+		{{ function('wp_footer') }}
+</html>

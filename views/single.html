@@ -1,0 +1,20 @@
+{% extends "views/base.html" %}
+{% block meta %}
+<title>{{post.title}} - {{wp_title}}</title>
+{% endblock meta %}
+{% block posts %}
+<article class='post'>
+  <div class='date'>{{post.display_date}}</div>
+  <h1>{{post.title}}</h1>
+  {{post.content}}
+  <div class='comments'>
+    {{comment_form}}
+    {% for comment in post.get_comments() %}
+    <div class='blog-comment' id='blog-comment-{{comment.ID}}'>
+      <h5 class='comment-author'>{{comment.author.name}} zegt</h5>
+      <div class='comment-content'>{{comment.comment_content|wpautop}}</div>
+    </div>
+    {% endfor %}
+  </div>
+</article>
+{% endblock posts %}

@@ -1,0 +1,10 @@
+{% extends "views/base.html" %}
+{% block posts %}
+{% for post in posts %}
+<div class='post'>
+  {% do action('woocommerce_before_main_content') %}
+  {{ function('woocommerce_content') }}
+  {% do action('woocommerce_after_main_content') %}
+</div>
+{% endfor %}
+{% endblock posts %}

@@ -1,0 +1,21 @@
+{% extends "views/base.html" %}
+
+{% block posts %}
+{% if term %}
+.post
+	%h1 {{term.name}}
+	%p {{term.description}}
+{% endif %}
+
+{% for post in posts %}
+.post
+	%a(href="{{post.permalink}}")
+		%figure
+			{% if post.thumbnail %}
+			%img(src="{{post.thumbnail.src|resize(320)}}")
+			{% endif %}
+		.date {{post.display_date}}
+		%h1 {{post.title}}
+		.preview {{post.get_preview(50,false,false)}}
+{% endfor %}
+{% endblock posts %}

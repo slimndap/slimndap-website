@@ -1,0 +1,33 @@
+{% extends "views/base.html" %}
+
+{% block meta %}
+%title {{post.title}} - {{wp_title}}
+{% endblock meta %}
+
+{% block posts %}
+%article.post.woocommerce
+	%h1 {{product.get_title}}
+	.intro
+		{{post.post_excerpt}}
+	
+	.download
+		%h2 Download
+		%p {{product.get_title}} costs {{ product.get_price_html }}.
+		%a.button.alt(href="{{product.add_to_cart_url}}") Continue
+	.order
+	.featured
+		{% for feature in featured %}
+		%figure
+			%img(src="{{feature.src|resize(320*1.5)}}")
+			%figcaption
+				%h3 {{feature.post_title}}
+				{{feature.post_content|apply_filters('the_content')}}
+			
+		{% endfor %}
+		
+		
+	.content
+		{{post.content}}
+			
+		
+{% endblock posts %}

@@ -1,0 +1,23 @@
+{% extends "views/base.html" %}
+{% block posts %}
+{% if term %}
+<div class='post'>
+  <h1>{{term.name}}</h1>
+  <p>{{term.description}}</p>
+</div>
+{% endif %}
+{% for post in posts %}
+<div class='post'>
+  <a href='{{post.permalink}}'>
+    <figure>
+      {% if post.thumbnail %}
+      <img src='{{post.thumbnail.src|resize(320)}}'>
+      {% endif %}
+    </figure>
+    <div class='date'>{{post.display_date}}</div>
+    <h1>{{post.title}}</h1>
+    <div class='preview'>{{post.get_preview(50,false,false)}}</div>
+  </a>
+</div>
+{% endfor %}
+{% endblock posts %}

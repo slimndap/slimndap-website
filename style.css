@@ -1,0 +1,348 @@
+@import '../../bower_components/normalize-css/normalize.css';
+/*
+Theme Name: Slim & Dapper
+Theme URI: http://slimndap.com
+Description: Theme for the Slimndap.com website.
+Author: Jeroen Schmit, Slim & Dapper
+Author URI: http://slimndap.com/
+Version: 1.0
+*/
+html body.single header .logo,
+html body.page header .logo,
+html body.archive header .logo {
+  max-width: 560px;
+  margin: 0 auto;
+}
+html body.single header .logo a,
+html body.page header .logo a,
+html body.archive header .logo a {
+  background-image: url(http://i0.wp.com/slimndap.com/logo/index.php/logo/png/192/64/0/fc3b00/slimndap.png);
+  background-position: 1em 0;
+  background-repeat: no-repeat;
+  height: 5em;
+  width: 16em;
+}
+html body.single .posts .post h1,
+html body.page .posts .post h1 {
+  font-size: 3em;
+  line-height: 1em;
+  font-weight: 300;
+  margin-bottom: 0.33333333em;
+}
+@media (max-width: 500px) {
+  html body.single .posts .post h1,
+  html body.page .posts .post h1 {
+    font-size: 2em;
+    line-height: 1.25em;
+    margin-bottom: 0.5em;
+  }
+}
+html body.single .posts .post h2,
+html body.page .posts .post h2 {
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.25em;
+  text-transform: uppercase;
+  margin: 2em 0 0;
+}
+html body.single .posts .post h3,
+html body.page .posts .post h3 {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1em;
+  line-height: 1.25em;
+}
+html body.single .posts .post a,
+html body.page .posts .post a {
+  color: #fc3b00;
+}
+html body.single .posts .post a > *,
+html body.page .posts .post a > * {
+  margin-left: 0;
+}
+html body.single .posts .post img,
+html body.page .posts .post img {
+  max-width: 100%;
+  height: auto;
+}
+html body.single .posts .post img.alignleft,
+html body.page .posts .post img.alignleft {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+html body.single .posts .post img.alignright,
+html body.page .posts .post img.alignright {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+html body.single .posts .post img.aligncenter,
+html body.page .posts .post img.aligncenter {
+  display: block;
+  margin: 10px auto;
+}
+html body.single .posts .post .wp-caption,
+html body.page .posts .post .wp-caption {
+  max-width: 100%;
+}
+html body.single .posts .post .wp-caption .wp-caption-text,
+html body.page .posts .post .wp-caption .wp-caption-text {
+  font-size: 0.875em;
+  font-style: italic;
+  margin-top: 0;
+}
+html body.home header {
+  height: 100%;
+  background-image: url(http://slimndap.com/logo/index.php/logo/png/240/240/0/fc3b00/slimndap.png);
+  background-position: center center;
+}
+html body.home header .posts {
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+  height: 3em;
+  overflow: hidden;
+  text-align: center;
+}
+html body.home header .posts a {
+  color: #3e626a;
+  text-decoration: none;
+  line-height: 3em;
+}
+html body.home header .posts a:before {
+  content: '\f078';
+  font-family: FontAwesome;
+  display: block;
+  font-size: 2em;
+}
+html body.home header .posts a:hover {
+  color: #000;
+}
+html body.single-product .posts .post .intro {
+  margin: 0 0 1em;
+}
+@media (min-width: 640px) {
+  html body.single-product .posts .post .intro {
+    font-size: 1.5em;
+    line-height: 1.25em;
+  }
+}
+html body.single-product .posts .post .download {
+  background-color: #bbdbc7;
+  padding: 1em;
+  margin: 0 0 1em;
+}
+html body.single-product .posts .post .download a {
+  color: #fff;
+}
+html body.single-product .posts .post .download h2 {
+  margin-top: 0;
+}
+html body.single-product .posts .post .featured {
+  overflow: auto;
+  margin: 0;
+}
+html body.single-product .posts .post .featured figure {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0;
+}
+html body.single-product .posts .post .featured figure img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+html body.single-product .posts .post .featured figure figcaption h3 {
+  font-weight: 300;
+  font-size: 1em;
+  font-style: italic;
+  margin: 0;
+}
+@media (min-width: 640px) {
+  html body.single-product .posts .post .featured {
+    margin: 0;
+  }
+  html body.single-product .posts .post .featured figure {
+    float: left;
+    width: 50%;
+    padding-right: 10px;
+  }
+  html body.single-product .posts .post .featured figure:nth-child(2n) {
+    padding-right: 0;
+    padding-left: 10px;
+  }
+  html body.single-product .posts .post .featured figure:nth-child(2n+1) {
+    clear: left;
+  }
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.25em;
+  background-color: #333;
+  height: 100%;
+}
+html body {
+  margin: 0;
+  height: 100%;
+}
+html body header {
+  background-color: #bbdbc7;
+  background-repeat: no-repeat;
+  border-bottom: 0.5em solid #282d2a;
+  position: relative;
+}
+html body header .logo a {
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+}
+html body header .menu {
+  display: none;
+}
+html body .breadcrumbs {
+  background-color: #fff;
+}
+html body .breadcrumbs > span {
+  display: block;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 1.14285714em 1.14285714em;
+  font-size: .875em;
+  line-height: 1.25em;
+}
+html body .breadcrumbs > span a {
+  color: #fc3b00;
+  text-decoration: none;
+}
+html body > .posts {
+  background-color: #fff;
+}
+html body > .posts .post {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 1em;
+}
+html body > .posts .post a {
+  color: inherit;
+  text-decoration: none;
+}
+html body > .posts .post a > * {
+  margin-left: 8em;
+}
+html body > .posts .post a figure {
+  width: 8em;
+  margin: 0;
+  float: left;
+  padding-right: 1em;
+}
+html body > .posts .post a figure img {
+  width: 100%;
+  height: auto;
+}
+html body > .posts .post a .date {
+  margin-left: 9.14285714em;
+}
+html body > .posts .post a h1 {
+  margin-left: 4em;
+  margin-bottom: 0.5em;
+}
+@media (max-width: 500px) {
+  html body > .posts .post a h1 {
+    margin-left: 6.4em;
+  }
+}
+html body > .posts .post a .preview:after {
+  content: '\f054';
+  font-family: FontAwesome;
+  font-size: 0.875em;
+  padding-left: 0.875em;
+  color: #3e626a;
+}
+html body > .posts .post a:hover .preview:after {
+  color: #fc3b00;
+}
+html body > .posts .post .date {
+  font-size: 0.875em;
+  color: #3e626a;
+}
+html body > .posts .post h1 {
+  font-size: 2em;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0;
+}
+@media (max-width: 500px) {
+  html body > .posts .post h1 {
+    font-size: 1.25em;
+    line-height: 1.25em;
+  }
+}
+html body footer {
+  padding: 1em 0;
+  color: #adadad;
+}
+html body footer .about,
+html body footer .contact,
+html body footer .social {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+html body footer .about a,
+html body footer .contact a,
+html body footer .social a {
+  color: inherit;
+  text-decoration: none;
+}
+html body footer .about a:hover,
+html body footer .contact a:hover,
+html body footer .social a:hover {
+  color: #fff;
+}
+html body footer .about > * {
+  margin-left: 3.5em;
+}
+html body footer .about figure {
+  width: 3.5em;
+  padding-right: 1em;
+  margin: 0;
+  float: left;
+}
+html body footer .about figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+}
+html body footer .contact > * {
+  line-height: 3em;
+  border-top: 1px solid #adadad;
+  text-transform: uppercase;
+}
+html body footer .contact > * a:before {
+  font-family: FontAwesome;
+  display: block;
+  float: left;
+  width: 2em;
+  font-size: 1.5em;
+  padding-left: 0.33333333em;
+}
+html body footer .contact .mail a:before {
+  content: '\f003';
+}
+html body footer .contact .visit a:before {
+  content: '\f041';
+}
+html body footer .contact .call a:before {
+  content: '\f095';
+}

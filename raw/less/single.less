@@ -1,0 +1,77 @@
+html {
+	body.single,
+	body.page {
+		header {
+			.logo {
+				max-width: @width;
+				margin: 0 auto;					
+				a {
+					background-image: url(http://i0.wp.com/slimndap.com/logo/index.php/logo/png/192/64/0/fc3b00/slimndap.png);
+					background-position: 1em 0;
+					background-repeat: no-repeat;
+					height: 5em;
+					width: 16em;
+				}
+			}
+		}
+		.posts {
+			.post {
+				h1 {
+					font-size: 3em;
+					line-height: 1em;
+					font-weight: 300;
+					margin-bottom: 1em/3;
+					@media(max-width: 500px) {
+						font-size: 2em;
+						line-height: 1.25em;
+						margin-bottom: 1em/2;	
+					}
+					
+				}
+				h2 {
+					font-size: 1.5em;
+					font-weight: 300;
+					line-height: 1.25em;
+					text-transform: uppercase;
+					margin: 2em 0 0;
+				}
+				h3 {
+					font-weight: 700;
+					font-style: italic;
+					font-size: 1em;
+					line-height: 1.25em;
+				}
+				a {
+					color: @orange;
+					> * {
+						margin-left: 0;
+					}
+				}
+				img {
+					max-width: 100%;
+					height: auto;
+					&.alignleft {
+						float: left;
+						margin: 0 10px 10px 0;
+					}
+					&.alignright {
+						float: right;
+						margin: 0 0 10px 10px;
+					}
+					&.aligncenter {
+						display: block;
+						margin: 10px auto;
+					}
+				}
+				.wp-caption {
+					max-width: 100%;
+					.wp-caption-text {
+						font-size: 0.875em;
+						font-style: italic;
+						margin-top: 0;
+					}
+				}
+			}
+		}
+	}
+}

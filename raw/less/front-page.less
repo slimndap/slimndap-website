@@ -1,0 +1,32 @@
+html {
+	body.home {
+		header {
+			height: 100%;
+			background-image: url(http://slimndap.com/logo/index.php/logo/png/240/240/0/fc3b00/slimndap.png);
+			background-position: center center;
+			.posts {
+				position: absolute;
+				bottom: 1em;
+				width: 100%;
+				height: 3em;
+				overflow: hidden;
+				text-align: center;
+				a {
+					color: @blue;
+					text-decoration: none;
+					line-height: 3em;
+					&:before {
+						content: '\f078';
+						font-family: FontAwesome;
+						display: block;
+						font-size: 2em;
+					}					
+					&:hover {
+						color: #000;
+						
+					}
+				}
+			}
+		}
+	}
+}
