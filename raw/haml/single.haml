@@ -7,7 +7,9 @@
 
 {% block posts %}
 %article.post
-	.date {{post.display_date}}
+	.date
+		{% set time = function('get_the_time','U') %}
+		{{ function('human_time_diff', time)}} ago
 	%h1 {{post.title}}
 	{{post.content}}
 	

@@ -4,7 +4,10 @@
 {% endblock meta %}
 {% block posts %}
 <article class='post'>
-  <div class='date'>{{post.display_date}}</div>
+  <div class='date'>
+    {% set time = function('get_the_time','U') %}
+    {{ function('human_time_diff', time)}} ago
+  </div>
   <h1>{{post.title}}</h1>
   {{post.content}}
   <div class='comments'>

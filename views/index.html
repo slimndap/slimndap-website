@@ -14,7 +14,10 @@
       <img src='{{post.thumbnail.src|resize(320)}}'>
       {% endif %}
     </figure>
-    <div class='date'>{{post.display_date}}</div>
+    <div class='date'>
+      {% set time = function('get_the_time','U') %}
+      {{ function('human_time_diff', time)}} ago
+    </div>
     <h1>{{post.title}}</h1>
     <div class='preview'>{{post.get_preview(50,false,false)}}</div>
   </a>
